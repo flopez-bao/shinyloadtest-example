@@ -15,10 +15,10 @@ system(paste0("export SHINYCANNON_PASS=",Sys.getenv("PASSWORD"),""))
 system(paste0("export SHINYCANNON_CONNECT_API_KEY=",Sys.getenv("API_KEY"),""))
 
 
-# CURRENTLY CANT RUN VIA SYSTEM SO PASTE INTO TERMINAL MANUALLY AND RUN
+# CURRENTLY CANT RUN VIA SYSTEM SO PASTE INTO TERMINAL MANUALLY AND RUN 
 
 # app name
-app_name <- "panopticon"
+app_name <- "yoda"
 print(
   paste0(
     "shinycannon recording.log ",
