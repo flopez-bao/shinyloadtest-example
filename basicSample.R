@@ -35,20 +35,20 @@ shinyloadtest::shinyloadtest_report(df, paste0(app_name,".html"))
 
 # archive ------------------------------
 
-shinyloadtest::record_session(
-  target_app_url = "https://rstudio-connect.testing.ap.datim.org/content/175",
-  connect_api_key = Sys.getenv("API_KEY")
-)
-HISTCONTROL=ignoreboth
-export SHINYCANNON_USER=myuser
-export SHINYCANNON_PASS=mypassword
-shinycannon recording.log https://rstudio-connect.testing.ap.datim.org/content/175 --workers 5 --loaded-duration-minutes 2 --output-dir run1 --overwrite-output 
-
-
-# record settings
-df <- shinyloadtest::load_runs("run1")
-shinyloadtest::shinyloadtest_report(df, "run1.html")
-
+# shinyloadtest::record_session(
+#   target_app_url = "https://rstudio-connect.testing.ap.datim.org/content/175",
+#   connect_api_key = Sys.getenv("API_KEY")
+# )
+# HISTCONTROL=ignoreboth
+# export SHINYCANNON_USER=myuser
+# export SHINYCANNON_PASS=mypassword
+# shinycannon recording.log https://rstudio-connect.testing.ap.datim.org/content/175 --workers 5 --loaded-duration-minutes 2 --output-dir run1 --overwrite-output 
+# 
+# 
+# # record settings
+# df <- shinyloadtest::load_runs("run1")
+# shinyloadtest::shinyloadtest_report(df, "run1.html")
+# 
 
 
 
