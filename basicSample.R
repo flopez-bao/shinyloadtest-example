@@ -6,7 +6,7 @@ shinyloadtest::record_session(
   connect_api_key = Sys.getenv("API_KEY")
   )
 
-# close tab
+# RUN INTERACTION WITH APP AND THEN CLOSE THE APP WHEN DONE
 
 # run command system
 system("HISTCONTROL=ignoreboth")
@@ -14,6 +14,8 @@ system(paste0("export SHINYCANNON_USER=",Sys.getenv("USERNAME"),""))
 system(paste0("export SHINYCANNON_PASS=",Sys.getenv("PASSWORD"),""))
 system(paste0("export SHINYCANNON_CONNECT_API_KEY=",Sys.getenv("API_KEY"),""))
 
+
+# CURRENTLY CANT RUN VIA SYSTEM SO PASTE INTO TERMINAL MANUALLY AND RUN
 
 # app name
 app_name <- "panopticon"
